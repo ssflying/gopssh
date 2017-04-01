@@ -11,5 +11,10 @@ pipeline {
         echo 'test'
       }
     }
+    stage('failed') {
+      steps {
+        sh 'false'
+      }
+    }
   }
 }
